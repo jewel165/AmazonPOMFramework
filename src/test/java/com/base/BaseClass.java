@@ -22,10 +22,10 @@ public class BaseClass {
 
 
 
-	WebDriver driver;
-	ExtentHtmlReporter reporter;
-	ExtentReports report;
-	ExtentTest test;
+	public WebDriver driver;
+	public ExtentHtmlReporter reporter;
+	public ExtentReports report;
+	public ExtentTest test;
 
 
 
