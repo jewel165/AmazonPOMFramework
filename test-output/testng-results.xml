@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="47797" started-at="2020-02-15T19:03:08 EST" finished-at="2020-02-15T19:03:56 EST">
+  <suite name="Suite" duration-ms="47955" started-at="2020-02-15T19:13:08 EST" finished-at="2020-02-15T19:13:56 EST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="47797" started-at="2020-02-15T19:03:08 EST" finished-at="2020-02-15T19:03:56 EST">
+    <test name="Test" duration-ms="47955" started-at="2020-02-15T19:13:08 EST" finished-at="2020-02-15T19:13:56 EST">
       <class name="com.Tests.AmazonLoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="setup" is-config="true" duration-ms="129" started-at="2020-02-15T19:03:08 EST" finished-at="2020-02-15T19:03:08 EST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="setup" is-config="true" duration-ms="164" started-at="2020-02-15T19:13:08 EST" finished-at="2020-02-15T19:13:08 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="setup" is-config="true" duration-ms="4645" started-at="2020-02-15T19:03:09 EST" finished-at="2020-02-15T19:03:13 EST">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="setup" is-config="true" duration-ms="5153" started-at="2020-02-15T19:13:08 EST" finished-at="2020-02-15T19:13:13 EST">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="LogIn_Invlid_Email()[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="LogIn_Invlid_Email" duration-ms="21524" started-at="2020-02-15T19:03:13 EST" finished-at="2020-02-15T19:03:35 EST">
+        <test-method status="FAIL" signature="LogIn_Invlid_Email()[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="LogIn_Invlid_Email" duration-ms="21514" started-at="2020-02-15T19:13:13 EST" finished-at="2020-02-15T19:13:35 EST">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="auth-error-message-box"]/div/div/ul/li/span"}
@@ -31,8 +31,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MDs-MacBook-Air.fios-router.home', ip: 'fe80:0:0:0:86a:1e50:77d2:f2a7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.3', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/tx/_y6jrbnj0_9...}, goog:chromeOptions: {debuggerAddress: localhost:52798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b01a7db5b65004ed95ab338b8c5e4d89
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/tx/_y6jrbnj0_9...}, goog:chromeOptions: {debuggerAddress: localhost:53132}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b08d38ff263f61bcdb007e1e111f0031
 *** Element info: {Using=xpath, value=//*[@id="auth-error-message-box"]/div/div/ul/li/span}]]>
             </message>
             <full-stacktrace>
@@ -42,8 +42,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MDs-MacBook-Air.fios-router.home', ip: 'fe80:0:0:0:86a:1e50:77d2:f2a7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.3', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/tx/_y6jrbnj0_9...}, goog:chromeOptions: {debuggerAddress: localhost:52798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b01a7db5b65004ed95ab338b8c5e4d89
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/tx/_y6jrbnj0_9...}, goog:chromeOptions: {debuggerAddress: localhost:53132}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b08d38ff263f61bcdb007e1e111f0031
 *** Element info: {Using=xpath, value=//*[@id="auth-error-message-box"]/div/div/ul/li/span}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -93,7 +93,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogIn_Invlid_Email -->
-        <test-method status="PASS" signature="Cleanup(org.testng.ITestResult)[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="Cleanup" is-config="true" duration-ms="235" started-at="2020-02-15T19:03:35 EST" finished-at="2020-02-15T19:03:35 EST">
+        <test-method status="PASS" signature="Cleanup(org.testng.ITestResult)[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="Cleanup" is-config="true" duration-ms="216" started-at="2020-02-15T19:13:35 EST" finished-at="2020-02-15T19:13:35 EST">
           <params>
             <param index="0">
               <value>
@@ -104,7 +104,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Cleanup -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="setup" is-config="true" duration-ms="3999" started-at="2020-02-15T19:03:35 EST" finished-at="2020-02-15T19:03:39 EST">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="setup" is-config="true" duration-ms="3728" started-at="2020-02-15T19:13:35 EST" finished-at="2020-02-15T19:13:39 EST">
           <params>
             <param index="0">
               <value>
@@ -115,11 +115,11 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="LogIn_ValidEmail_invalidPass()[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="LogIn_ValidEmail_invalidPass" duration-ms="2242" started-at="2020-02-15T19:03:39 EST" finished-at="2020-02-15T19:03:41 EST">
+        <test-method status="PASS" signature="LogIn_ValidEmail_invalidPass()[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="LogIn_ValidEmail_invalidPass" duration-ms="2279" started-at="2020-02-15T19:13:39 EST" finished-at="2020-02-15T19:13:41 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogIn_ValidEmail_invalidPass -->
-        <test-method status="PASS" signature="Cleanup(org.testng.ITestResult)[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="Cleanup" is-config="true" duration-ms="215" started-at="2020-02-15T19:03:41 EST" finished-at="2020-02-15T19:03:41 EST">
+        <test-method status="PASS" signature="Cleanup(org.testng.ITestResult)[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="Cleanup" is-config="true" duration-ms="209" started-at="2020-02-15T19:13:41 EST" finished-at="2020-02-15T19:13:41 EST">
           <params>
             <param index="0">
               <value>
@@ -130,7 +130,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Cleanup -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="setup" is-config="true" duration-ms="3956" started-at="2020-02-15T19:03:41 EST" finished-at="2020-02-15T19:03:45 EST">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="setup" is-config="true" duration-ms="3729" started-at="2020-02-15T19:13:41 EST" finished-at="2020-02-15T19:13:45 EST">
           <params>
             <param index="0">
               <value>
@@ -141,11 +141,11 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="LoginwithValidINFO()[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="LoginwithValidINFO" duration-ms="10025" started-at="2020-02-15T19:03:45 EST" finished-at="2020-02-15T19:03:55 EST">
+        <test-method status="PASS" signature="LoginwithValidINFO()[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="LoginwithValidINFO" duration-ms="10162" started-at="2020-02-15T19:13:45 EST" finished-at="2020-02-15T19:13:55 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginwithValidINFO -->
-        <test-method status="PASS" signature="Cleanup(org.testng.ITestResult)[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="Cleanup" is-config="true" duration-ms="338" started-at="2020-02-15T19:03:55 EST" finished-at="2020-02-15T19:03:56 EST">
+        <test-method status="PASS" signature="Cleanup(org.testng.ITestResult)[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="Cleanup" is-config="true" duration-ms="307" started-at="2020-02-15T19:13:55 EST" finished-at="2020-02-15T19:13:55 EST">
           <params>
             <param index="0">
               <value>
@@ -156,7 +156,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Cleanup -->
-        <test-method status="PASS" signature="Teardown()[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="Teardown" is-config="true" duration-ms="439" started-at="2020-02-15T19:03:56 EST" finished-at="2020-02-15T19:03:56 EST">
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="Teardown" is-config="true" duration-ms="442" started-at="2020-02-15T19:13:55 EST" finished-at="2020-02-15T19:13:56 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
