@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Test(failed)" parallel="tests">
+    <parameter name="Browser" value="MACchrome"/>
+    <classes>
+      <class name="com.Tests.AmazonLoginTest">
+        <methods>
+          <include name="LogIn_Invlid_Email"/>
+          <include name="Teardown"/>
+          <include name="Cleanup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.Tests.AmazonLoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
