@@ -4,15 +4,16 @@
   <test thread-count="5" name="Test(failed)" parallel="tests">
     <parameter name="Browser" value="MACchrome"/>
     <classes>
-      <class name="com.Tests.AmazonLoginTest">
+      <class name="com.Tests.AmazonHomepageTest">
         <methods>
-          <include name="LogIn_Invlid_Email"/>
+          <include name="checkAmazonLogo"/>
           <include name="Teardown"/>
+          <include name="homepageTitle"/>
           <include name="Cleanup"/>
           <include name="setup"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.Tests.AmazonLoginTest -->
+      </class> <!-- com.Tests.AmazonHomepageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
