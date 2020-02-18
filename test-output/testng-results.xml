@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Suite" duration-ms="67740" started-at="2020-02-18T17:24:39 EST" finished-at="2020-02-18T17:25:47 EST">
     <groups>
     </groups>
@@ -12,6 +13,18 @@
           </reporter-output>
         </test-method> <!-- setup -->
         <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="setup" is-config="true" duration-ms="8514" started-at="2020-02-18T17:24:40 EST" finished-at="2020-02-18T17:24:48 EST">
+=======
+  <suite name="Suite" duration-ms="13990" started-at="2020-02-18T14:03:06 EST" finished-at="2020-02-18T14:03:20 EST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="13990" started-at="2020-02-18T14:03:06 EST" finished-at="2020-02-18T14:03:20 EST">
+      <class name="com.Tests.AmazonHomepageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.Tests.AmazonHomepageTest@cd2dae5]" name="setup" is-config="true" duration-ms="134" started-at="2020-02-18T14:03:06 EST" finished-at="2020-02-18T14:03:06 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.Tests.AmazonHomepageTest@cd2dae5]" name="setup" is-config="true" duration-ms="4640" started-at="2020-02-18T14:03:06 EST" finished-at="2020-02-18T14:03:11 EST">
+>>>>>>> f879b6affce9680f496f2ca8cd6075ce4911e007
           <params>
             <param index="0">
               <value>
@@ -22,6 +35,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="LogIn_Invlid_Email()[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="LogIn_Invlid_Email" duration-ms="23491" started-at="2020-02-18T17:24:48 EST" finished-at="2020-02-18T17:25:12 EST">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -94,17 +108,28 @@ at java.lang.Thread.run(Thread.java:748)
           </reporter-output>
         </test-method> <!-- LogIn_Invlid_Email -->
         <test-method status="PASS" signature="Cleanup(org.testng.ITestResult)[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="Cleanup" is-config="true" duration-ms="340" started-at="2020-02-18T17:25:12 EST" finished-at="2020-02-18T17:25:12 EST">
+=======
+        <test-method status="PASS" signature="TotalHomePageLinks()[pri:0, instance:com.Tests.AmazonHomepageTest@cd2dae5]" name="TotalHomePageLinks" duration-ms="242" started-at="2020-02-18T14:03:11 EST" finished-at="2020-02-18T14:03:11 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TotalHomePageLinks -->
+        <test-method status="PASS" signature="Cleanup(org.testng.ITestResult)[pri:0, instance:com.Tests.AmazonHomepageTest@cd2dae5]" name="Cleanup" is-config="true" duration-ms="266" started-at="2020-02-18T14:03:11 EST" finished-at="2020-02-18T14:03:11 EST">
+>>>>>>> f879b6affce9680f496f2ca8cd6075ce4911e007
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LogIn_Invlid_Email status=FAILURE method=AmazonLoginTest.LogIn_Invlid_Email()[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5] output={null}]]]>
+                <![CDATA[[TestResult name=TotalHomePageLinks status=SUCCESS method=AmazonHomepageTest.TotalHomePageLinks()[pri:0, instance:com.Tests.AmazonHomepageTest@cd2dae5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Cleanup -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="setup" is-config="true" duration-ms="7289" started-at="2020-02-18T17:25:12 EST" finished-at="2020-02-18T17:25:19 EST">
+=======
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.Tests.AmazonHomepageTest@cd2dae5]" name="setup" is-config="true" duration-ms="3691" started-at="2020-02-18T14:03:11 EST" finished-at="2020-02-18T14:03:15 EST">
+>>>>>>> f879b6affce9680f496f2ca8cd6075ce4911e007
           <params>
             <param index="0">
               <value>
@@ -115,22 +140,34 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="LogIn_ValidEmail_invalidPass()[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="LogIn_ValidEmail_invalidPass" duration-ms="3717" started-at="2020-02-18T17:25:19 EST" finished-at="2020-02-18T17:25:23 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogIn_ValidEmail_invalidPass -->
         <test-method status="PASS" signature="Cleanup(org.testng.ITestResult)[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="Cleanup" is-config="true" duration-ms="337" started-at="2020-02-18T17:25:23 EST" finished-at="2020-02-18T17:25:23 EST">
+=======
+        <test-method status="PASS" signature="checkAmazonLogo()[pri:0, instance:com.Tests.AmazonHomepageTest@cd2dae5]" name="checkAmazonLogo" duration-ms="186" started-at="2020-02-18T14:03:15 EST" finished-at="2020-02-18T14:03:15 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAmazonLogo -->
+        <test-method status="PASS" signature="Cleanup(org.testng.ITestResult)[pri:0, instance:com.Tests.AmazonHomepageTest@cd2dae5]" name="Cleanup" is-config="true" duration-ms="235" started-at="2020-02-18T14:03:15 EST" finished-at="2020-02-18T14:03:15 EST">
+>>>>>>> f879b6affce9680f496f2ca8cd6075ce4911e007
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LogIn_ValidEmail_invalidPass status=SUCCESS method=AmazonLoginTest.LogIn_ValidEmail_invalidPass()[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5] output={null}]]]>
+                <![CDATA[[TestResult name=checkAmazonLogo status=SUCCESS method=AmazonHomepageTest.checkAmazonLogo()[pri:0, instance:com.Tests.AmazonHomepageTest@cd2dae5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Cleanup -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="setup" is-config="true" duration-ms="7151" started-at="2020-02-18T17:25:23 EST" finished-at="2020-02-18T17:25:30 EST">
+=======
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.Tests.AmazonHomepageTest@cd2dae5]" name="setup" is-config="true" duration-ms="3824" started-at="2020-02-18T14:03:15 EST" finished-at="2020-02-18T14:03:19 EST">
+>>>>>>> f879b6affce9680f496f2ca8cd6075ce4911e007
           <params>
             <param index="0">
               <value>
@@ -141,26 +178,38 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="LoginwithValidINFO()[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="LoginwithValidINFO" duration-ms="15196" started-at="2020-02-18T17:25:30 EST" finished-at="2020-02-18T17:25:46 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginwithValidINFO -->
         <test-method status="PASS" signature="Cleanup(org.testng.ITestResult)[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="Cleanup" is-config="true" duration-ms="548" started-at="2020-02-18T17:25:46 EST" finished-at="2020-02-18T17:25:46 EST">
+=======
+        <test-method status="PASS" signature="homepageTitle()[pri:0, instance:com.Tests.AmazonHomepageTest@cd2dae5]" name="homepageTitle" duration-ms="129" started-at="2020-02-18T14:03:19 EST" finished-at="2020-02-18T14:03:19 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepageTitle -->
+        <test-method status="PASS" signature="Cleanup(org.testng.ITestResult)[pri:0, instance:com.Tests.AmazonHomepageTest@cd2dae5]" name="Cleanup" is-config="true" duration-ms="231" started-at="2020-02-18T14:03:19 EST" finished-at="2020-02-18T14:03:19 EST">
+>>>>>>> f879b6affce9680f496f2ca8cd6075ce4911e007
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginwithValidINFO status=SUCCESS method=AmazonLoginTest.LoginwithValidINFO()[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5] output={null}]]]>
+                <![CDATA[[TestResult name=homepageTitle status=SUCCESS method=AmazonHomepageTest.homepageTitle()[pri:0, instance:com.Tests.AmazonHomepageTest@cd2dae5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Cleanup -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="Teardown()[pri:0, instance:com.Tests.AmazonLoginTest@cd2dae5]" name="Teardown" is-config="true" duration-ms="845" started-at="2020-02-18T17:25:46 EST" finished-at="2020-02-18T17:25:47 EST">
+=======
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:com.Tests.AmazonHomepageTest@cd2dae5]" name="Teardown" is-config="true" duration-ms="372" started-at="2020-02-18T14:03:19 EST" finished-at="2020-02-18T14:03:20 EST">
+>>>>>>> f879b6affce9680f496f2ca8cd6075ce4911e007
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-      </class> <!-- com.Tests.AmazonLoginTest -->
+      </class> <!-- com.Tests.AmazonHomepageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

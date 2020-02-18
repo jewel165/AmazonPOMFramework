@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test" parallel="tests">
   <parameter name="Browser" value="MACchrome"></parameter>
     <classes>
-      <class name="com.Tests.AmazonLoginTest"/>
+      <class name="com.Tests.AmazonHomepageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
