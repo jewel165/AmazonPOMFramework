@@ -30,6 +30,7 @@ public class AmazonLoginTest extends BaseClass {
 	@Test
 	public void LogIn_ValidEmail_invalidPass() {
 		test=report.createTest("LogIn_ValidEmail_invalidPass");
+		
 		//AmazonLoginPage azl = new AmazonLoginPage(driver);
 		AmazonLoginPage azl = PageFactory.initElements(driver,AmazonLoginPage.class );
 
