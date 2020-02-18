@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Tests.AmazonHomepageTest">
+      <class name="com.Tests.AmazonLoginTest">
         <methods>
-          <include name="checkAmazonLogo"/>
+          <include name="LogIn_ValidEmail_invalidPass"/>
+          <include name="LogIn_Invlid_Email"/>
           <include name="Teardown"/>
-          <include name="homepageTitle"/>
           <include name="Cleanup"/>
-          <include name="HomepageLinkCount"/>
+          <include name="LoginwithValidINFO"/>
           <include name="setup"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.Tests.AmazonHomepageTest -->
+      </class> <!-- com.Tests.AmazonLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -5,6 +5,7 @@
   <parameter name="Browser" value="MACchrome"></parameter>
     <classes>
       <class name="com.Tests.AmazonHomepageTest"/>
+      <class name="com.Tests.AmazonLoginTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -12,7 +12,7 @@ public class AmazonLoginTest extends BaseClass {
 	//WebDriver driver;
 	// public AmazonLoginPage azl = new AmazonLoginPage(driver);
 	
-	@Test
+	@Test(priority=1)
 	public void LoginwithValidINFO() throws Exception {
 		test=report.createTest("LoginwithValidINFO");
 
@@ -27,7 +27,7 @@ public class AmazonLoginTest extends BaseClass {
 		azl.ClickOnSinOutBTN();
 
 	}
-	@Test
+	@Test(priority=3)
 	public void LogIn_ValidEmail_invalidPass() {
 		test=report.createTest("LogIn_ValidEmail_invalidPass");
 		
@@ -43,7 +43,7 @@ public class AmazonLoginTest extends BaseClass {
 
 	}
 
-	@Test
+	@Test(priority=2)
 	public void LogIn_Invlid_Email() {
 		test=report.createTest("LogIn_Invlid_Email");
 		//AmazonLoginPage azl = new AmazonLoginPage(driver);
