@@ -15,8 +15,8 @@ public class TestUtilities {
 	
 	public void TakeScreenShott(WebDriver driver) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot)driver;
+		Filepath = System.getProperty("user.dir")+"/ScreenShots"+"/System.currentTimeMillis()"+".png";// File name format
 		File src = ts.getScreenshotAs(OutputType.FILE);// Souce of the screenShot
-		 Filepath = System.getProperty("user.dir")+"/ScreenShots"+"/System.currentTimeMillis()"+".png";// File name format
 		File dsc = new File(Filepath);
 		FileUtils.copyFile(src, dsc);
 	}

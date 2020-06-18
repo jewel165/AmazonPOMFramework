@@ -1,13 +1,20 @@
 package com.base;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
@@ -23,9 +30,12 @@ public class BaseClass {
 
 
 	public WebDriver driver;
-	public ExtentHtmlReporter reporter;
-	public ExtentReports report;
-	public ExtentTest test;
+	
+	public static ExtentHtmlReporter reporter;
+	public static ExtentReports report;
+	public static ExtentTest test;
+	public String Filepath;
+
 
 
 
@@ -33,12 +43,12 @@ public class BaseClass {
 	@Parameters("Browser")
 	@BeforeMethod()
 
-	public void setup(String Browser) {
+	public void setupdriver(String Browser) {
 
 
 
 		if(Browser.equalsIgnoreCase("MACchrome")) { //configure browser properties
-			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/Drivers/chromedriver-2");
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/Drivers/chromedriver");
 			driver = new ChromeDriver();//initiate the chrome browser for mac
 		}
 
@@ -53,9 +63,10 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 
+
 	}
 
-	@BeforeTest
+	@BeforeSuite
 	public void setup() {
 
 		reporter= new ExtentHtmlReporter(System.getProperty("user.dir")+"/Reports/Report.html");
@@ -65,7 +76,7 @@ public class BaseClass {
 
 		reporter.config().setTheme(Theme.DARK);
 		reporter.config().setReportName("Automation");
-		reporter.config().setDocumentTitle("Google test");
+		reporter.config().setDocumentTitle("Amazon Test");
 
 		report.setSystemInfo("Tester", "md jewel");
 		report.setSystemInfo("env", "QA");
@@ -79,7 +90,7 @@ public class BaseClass {
 
 	}
 
-	@AfterTest
+	@AfterSuite
 	public void Teardown() {
 		report.flush();
 
@@ -88,7 +99,7 @@ public class BaseClass {
 
 
 	@AfterMethod()
-	public void Cleanup(ITestResult res)  {
+	public void Cleanup(ITestResult res) throws Exception  {
 
 
 		if(res.getStatus()==ITestResult.SUCCESS) {
@@ -97,6 +108,9 @@ public class BaseClass {
 		else if(res.getStatus()==ITestResult.FAILURE) {
 			test.log(Status.FAIL, "this test case failed");
 			test.log(Status.FAIL, res.getThrowable());
+			TakeScreenShott(driver);
+			test.addScreenCaptureFromPath(Filepath);
+			
 
 
 		}
@@ -106,6 +120,14 @@ public class BaseClass {
 		}
 
 		driver.quit(); // CLOSING BROWSER AFTER EVERY TEST.
+	}
+	
+	public void TakeScreenShott(WebDriver driver) throws IOException {
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		Filepath = System.getProperty("user.dir")+"/ScreenShots"+"/System.currentTimeMillis()"+".png";// File name format
+		File src = ts.getScreenshotAs(OutputType.FILE);// Souce of the screenShot
+		File dsc = new File(Filepath);
+		FileUtils.copyFile(src, dsc);
 	}
 
 
