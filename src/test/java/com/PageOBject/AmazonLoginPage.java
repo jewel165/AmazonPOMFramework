@@ -23,7 +23,7 @@ public class AmazonLoginPage {
 	
 	
 	// Stated SignIn Related Elemets/methods
-	@FindBy(how=How.ID,using="nav-link-accountList")
+	@FindBy(how=How.XPATH,using="//*[@id='nav-link-accountList']/span[2]")
 	WebElement AccountList;
 	
 
@@ -42,13 +42,13 @@ public class AmazonLoginPage {
 	@FindBy(how=How.ID,using="nav-hamburger-menu")
 	WebElement HamburgerMenu ;
 	
-	@FindBy(how=How.XPATH,using="//*[@id=\"auth-error-message-box\"]/div/div/ul/li/span")
+	@FindBy(how=How.XPATH,using="//*[@id='auth-error-message-box']/div/div/ul/li/span")
 	WebElement LogInErrorMessage ;
 	
-	@FindBy(how=How.XPATH,using="//*[@id=\"auth-error-message-box\"]/div/div")
+	@FindBy(how=How.XPATH,using="//*[@id='auth-error-message-box']/div/div")
 	WebElement EmailErrorMessageBox;
 
-	@FindBy(how=How.XPATH,using="//*[@id=\"hmenu-content\"]/ul[35]/li[47]/a/div")
+	@FindBy(how=How.XPATH,using="//*[@id='hmenu-content']/ul[35]/li[47]/a/div")
 	WebElement BTN_SignOut;
 	
 	

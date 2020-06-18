@@ -8,48 +8,147 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">52,513</td><td></td><td></td></tr>
+<tr><th colspan="7">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">0</td><td class="num">103</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.Tests.AmazonLoginTest</td><td><a href="#m0">LogIn_Invlid_Email</a></td><td rowspan="1">1592437782751</td><td rowspan="1">22540</td></tr><tr class="failedeven"><td><a href="#m1">LoginwithValidINFO</a></td><td rowspan="1">1592437816244</td><td rowspan="1">1</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.Tests.AmazonHomepageTest</td><td><a href="#m2">TotalHomePageLinks</a></td><td rowspan="1">1592437770153</td><td rowspan="1">1346</td></tr><tr class="passedeven"><td><a href="#m3">checkAmazonLogo</a></td><td rowspan="1">1592437774603</td><td rowspan="1">997</td></tr><tr class="passedeven"><td><a href="#m4">homepageTitle</a></td><td rowspan="1">1592437778721</td><td rowspan="1">913</td></tr><tr class="passedodd"><td rowspan="1">com.Tests.AmazonLoginTest</td><td><a href="#m5">LogIn_ValidEmail_invalidPass</a></td><td rowspan="1">1592437809289</td><td rowspan="1">3541</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.Tests.AmazonHomepageTest</td><td><a href="#m0">setupdriver</a></td><td rowspan="1">1592462135828</td><td rowspan="1">-1592462135828</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="5">com.Tests.AmazonHomepageTest</td><td><a href="#m1">Cleanup</a></td><td rowspan="3">1592462135887</td><td rowspan="3">-1592462135887</td></tr><tr class="skippedeven"><td><a href="#m2">Cleanup</a></td></tr><tr class="skippedeven"><td><a href="#m3">Cleanup</a></td></tr><tr class="skippedeven"><td><a href="#m4">setupdriver</a></td><td rowspan="2">1592462135868</td><td rowspan="2">-1592462135868</td></tr><tr class="skippedeven"><td><a href="#m5">setupdriver</a></td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">com.Tests.AmazonHomepageTest</td><td><a href="#m6">TotalHomePageLinks</a></td><td rowspan="1">1592462135839</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m7">checkAmazonLogo</a></td><td rowspan="1">1592462135851</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m8">homepageTitle</a></td><td rowspan="1">1592462135873</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.Tests.AmazonLoginTest#LogIn_Invlid_Email</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;auth-error-message-box&quot;]/div/div/ul/li/span&quot;}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MDs-MacBook-Air.fios-router.home&apos;, ip: &apos;fe80:0:0:0:1cbb:75d7:c644:863b%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;1.8.0_221&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/tx/_y6jrbnj0_9...}, goog:chromeOptions: {debuggerAddress: localhost:52931}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 75a0f153693a655d484f4d5e716d3796
-*** Element info: {Using=xpath, value=//*[@id=&quot;auth-error-message-box&quot;]/div/div/ul/li/span}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.getText(Unknown Source)
-	at com.PageOBject.AmazonLoginPage.VerifyLogInError(AmazonLoginPage.java:84)
-	at com.Tests.AmazonLoginTest.LogIn_Invlid_Email(AmazonLoginTest.java:64)
+<h2>Default test</h2><h3 id="m0">com.Tests.AmazonHomepageTest#setupdriver</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;Browser&apos; is required by BeforeMethod on method setupdriver but has not been marked @Optional or defined
+in /private/var/folders/tx/_y6jrbnj0_928p4q052bpdg40000gn/T/testng-eclipse--30782738/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:289)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:377)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:721)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:164)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:275)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.Tests.AmazonLoginTest#LoginwithValidINFO</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.PageOBject.AmazonLoginPage.ClickonAccount(AmazonLoginPage.java:56)
-	at com.Tests.AmazonLoginTest.LoginwithValidINFO(AmazonLoginTest.java:23)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.Tests.AmazonHomepageTest#Cleanup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.Tests.AmazonHomepageTest#Cleanup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.Tests.AmazonHomepageTest#Cleanup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.Tests.AmazonHomepageTest#setupdriver</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.Tests.AmazonHomepageTest#setupdriver</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.Tests.AmazonHomepageTest#TotalHomePageLinks</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;Browser&apos; is required by BeforeMethod on method setupdriver but has not been marked @Optional or defined
+in /private/var/folders/tx/_y6jrbnj0_928p4q052bpdg40000gn/T/testng-eclipse--30782738/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:289)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:377)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:721)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:164)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:275)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.Tests.AmazonHomepageTest#TotalHomePageLinks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.Tests.AmazonHomepageTest#checkAmazonLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.Tests.AmazonHomepageTest#homepageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.Tests.AmazonLoginTest#LogIn_ValidEmail_invalidPass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.Tests.AmazonHomepageTest#checkAmazonLogo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;Browser&apos; is required by BeforeMethod on method setupdriver but has not been marked @Optional or defined
+in /private/var/folders/tx/_y6jrbnj0_928p4q052bpdg40000gn/T/testng-eclipse--30782738/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:289)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:377)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:721)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:164)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:275)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.Tests.AmazonHomepageTest#homepageTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;Browser&apos; is required by BeforeMethod on method setupdriver but has not been marked @Optional or defined
+in /private/var/folders/tx/_y6jrbnj0_928p4q052bpdg40000gn/T/testng-eclipse--30782738/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:289)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:377)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:721)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:164)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:275)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

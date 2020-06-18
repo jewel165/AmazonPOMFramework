@@ -36,7 +36,7 @@ public class AmazonHomepageTest extends BaseClass {
 
 		//AmazonHomepage azh =PageFactory.initElements(driver, AmazonHomepage.class);
 		//azh.VerifyLogo();
-		WebElement amazonLogo = driver.findElement(By.xpath("//*[@id=\"nav-logo\"]/a[1]/span[1]"));
+		WebElement amazonLogo = driver.findElement(By.xpath("//*[@id='nav-logo']/a[1]/span[1]"));
 		amazonLogo.isEnabled();
 		Boolean ACTcondition =  amazonLogo.isEnabled();
 		Boolean EXPcondition = true;
