@@ -8,9 +8,9 @@
           <include name="LogIn_ValidEmail_invalidPass"/>
           <include name="LogIn_Invlid_Email"/>
           <include name="Teardown"/>
+          <include name="setupdriver"/>
           <include name="Cleanup"/>
           <include name="LoginwithValidINFO"/>
-          <include name="setup"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.Tests.AmazonLoginTest -->
