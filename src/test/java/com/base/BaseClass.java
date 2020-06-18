@@ -100,7 +100,7 @@ public class BaseClass {
 
 	@AfterMethod()
 	public void Cleanup(ITestResult res) throws Exception  {
-
+		/*
 
 		if(res.getStatus()==ITestResult.SUCCESS) {
 			test.log(Status.PASS, "this test case paseed ");
@@ -118,7 +118,7 @@ public class BaseClass {
 			test.log(Status.SKIP, "This test case was skipped, needs your attention");
 			test.log(Status.SKIP, res.getThrowable());
 		}
-
+	*/
 		driver.quit(); // CLOSING BROWSER AFTER EVERY TEST.
 	}
 	
